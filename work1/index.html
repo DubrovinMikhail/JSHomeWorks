@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Угадай число</title>
+</head>
+<body>
+    <p>Loading, please wait...</p>
+    <script>
+        let RandomNumber = Math.floor(Math.random() * 1000)
+        console.log("загаданное число: ", RandomNumber);
+        while(true){
+            let InputNumber = prompt("Введите любое число")
+            if(isNaN(InputNumber)){
+                alert("Введите пожалуйста число")
+            }else{if(InputNumber < RandomNumber){
+                    alert("Загаданное число больше")
+                }else if(InputNumber > RandomNumber){
+                    alert("Загаданное число меньше")
+                }else{
+                    alert("Поздравляю вы угадали")
+                    break
+                } 
+            }
+        }
+      </script>
+</body>
+</html>
