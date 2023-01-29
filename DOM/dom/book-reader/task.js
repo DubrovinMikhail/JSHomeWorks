@@ -1,5 +1,5 @@
-const fontSizeControl = Array.from(document.querySelectorAll('.font-size'))
-const content = document.querySelector('.book')
+const fontSizeControl = Array.from(document.querySelectorAll('.font-size'));
+const content = document.querySelector('.book');
 
 for (let element of fontSizeControl) {
   element.addEventListener('click', (event) => {
