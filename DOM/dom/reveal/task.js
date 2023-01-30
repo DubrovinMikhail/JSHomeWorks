@@ -1,4 +1,4 @@
-const reveals = Array.from(document.querySelectorAll('.reveal'))ж
+const reveals = Array.from(document.querySelectorAll('.reveal'));
 
 for (let reveal of reveals) {
   window.addEventListener('scroll', () =>{
